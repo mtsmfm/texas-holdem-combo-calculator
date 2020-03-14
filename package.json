@@ -1,4 +1,9 @@
 {
+  "app": "dist/index.html",
+  "scripts": {
+    "start": "parcel index.html -p 3000 --hmr-port 3035",
+    "build": "parcel build index.html"
+  },
   "devDependencies": {
     "parcel": "^2.0.0-alpha.3.2",
     "prettier": "^1.19.1"
@@ -12,5 +17,10 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "typescript": "^3.8.3"
+  },
+  "targets": {
+    "app": {
+      "publicUrl": "/texas-holdem-combo-calculator"
+    }
   }
 }
